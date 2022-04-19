@@ -1,0 +1,11 @@
+<div class="search-container" *ngIf="router.url == '/'">
+    <form class="search-form" #form="ngForm" >
+        <span class="logo" routerLink="/" *ngIf="router.url == '/'">NGVGDB</span>
+        <input class="search-input" *ngIf="router.url == '/'"  placeholder="Search 500.000 games" name="search" [(ngModel)]="searchword" (keyup)="search($event)" >
+        <button class="search-button" *ngIf="router.url == '/'"> Search</button>
+
+    </form>
+
+
+
+</div>
